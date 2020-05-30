@@ -1,0 +1,7 @@
+node_modules
+original
+Tasks
+package-lock.json
+package.json
+gulpfile.js
+paths.js

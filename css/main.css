@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+}
+
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    text-shadow: 2px 2px 2px #000;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background: linear-gradient(to top left, rgb(231, 24, 17), rgb(229, 245, 11));
+}
+
+@media (max-width: 450px) {
+    .carousel-caption .display-2 {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 1100px) {
+    .carousel-inner img{
+        width: 100%;
+    }
+}
+
+.jumbotron {
+    padding: 1em;
+    border-radius: 0;
+}
+
+/* .padding {
+    padding-bottom: 2em;
+} */
+
+.alert {
+    margin: 0 auto;
+    padding-top: 2em;
+}
+
+ .fa-viruses, .fa-head-side-virus, .fa-biohazard {
+    color: rgb(248, 128, 29);
+}
+
+.fa-skull-crossbones, .fa-lungs-virus {
+    color:rgb(243, 220, 12);
+}
+
+.fa-virus,  .fa-disease {
+    color: rgb(255, 61, 2);
+}
+
+.article-image {
+    --size: 350px;
+    --offset: 0.1;
+    --shape: circle(calc((100% - 100% * var(--offset)) / 2) at 50%);
+
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+    clip-path: var(--shape);
+    shape-outside: var(--shape);
+    shape-margin: calc((var(--size) / 2) * var(--offset));
+
+    float: right;
+}
+
+#fixed {
+    height: 400px;
+    border-top: 4px solid #f0f0f0;
+    border-bottom: 4px solid #f0f0f0;
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
+}
+
+#gifsBtn {
+    margin-bottom: 10px;
+}
+
+#gifs img{
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+.social a {
+    font-size: 3em;
+    padding: 28px;
+}
+
+.fa-vk {color:rgb(33, 86, 185)}
+.fa-instagram {color: #44749b}
+.fa-twitter{color: #00aced;}
+.fa-steam{color: #414446;}
+
+.fa-steam:hover, .fa-vk:hover, .fa-twitter:hover, .fa-instagram:hover{
+    color:#ccc;
+}
+
+.littleImg {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+footer {
+    /* background: linear-gradient(to right, transparent, rgba(0, 47, 255, 0.623), transparent); */
+    background: linear-gradient(to top left, rgba(255, 77, 6, 0.685), rgba(255, 196, 0, 0.685));
+    color: whitesmoke;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-img-top {
+    margin-top: 20px;
+    height: 250px;
+    width: auto;
+    object-fit: contain;
+}
